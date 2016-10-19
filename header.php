@@ -92,7 +92,9 @@
 	<header class="l_header">
 		<div class="g_inner">
 			<a class="m_menu_trigger" data-role="menu_trigger"><span></span></a>
-			<a href="" class="l_header__logo">Техноком</a>
+			<a href="#" class="l_header__logo">
+				<img src="/wp-content/themes/tkom/images/logo.png" alt="Техноком"/>
+			</a>
 			<div class="l_header__search">
 				<input type="text" placeholder="Поиск" class="bal_input dark"/>
 			</div>

@@ -3,7 +3,7 @@
 .l_base.landing { background: url(../../images/space.jpg) center center no-repeat; background-size: cover; }
 
     .landing .l_header { right: 0; height: 60px; padding-right: 0; background-color: rgba(0,123,172,0.6); overflow-y: hidden; }
-        .landing .l_header__logo { line-height: 60px; }
+        .landing .l_header__logo { line-height: 66px; }
         .landing .l_header__right { }
 			.landing .l_header__right > a { height: 60px; line-height: 60px; }
 

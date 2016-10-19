@@ -89,7 +89,7 @@
 					.m_sidebar.open + .l_base .m_menu_trigger::before { width: 12px; margin-top: -5px; margin-left: -14px; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); }
 					.m_sidebar.open + .l_base .m_menu_trigger::after { width: 12px; margin-top: 3px; margin-left: -14px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg); }
 
-				.l_header__logo { left: 50%; width: 200px; margin-left: -100px; text-align: center; line-height: 58px; }
+				.l_header__logo { left: 50%; width: 200px; margin-left: -100px; text-align: center; line-height: 66px; }
 				.l_header__search { display: none; }
 				.l_header__right { }
 					.l_header__right > a { height: 60px; line-height: 60px; }

@@ -55,8 +55,6 @@
 <div class="m_sidebar" data-role="mobile_sidebar">
 	<div data-role="auth">
 		<nav class="m_sidebar__menu">
-			<a href="#" class="m_sidebar__menu__item" data-role="for_phone">Поехали!</a>
-			<a href="#" class="m_sidebar__menu__item" data-role="for_phone">Сообщества</a>
 			<a href="#" class="m_sidebar__menu__item" data-role="for_phone">Помощь</a>
 		</nav>
 	</div>
@@ -72,10 +70,10 @@
 	<header class="l_header">
 		<div class="g_inner">
 			<a class="m_menu_trigger" data-role="menu_trigger"><span></span></a>
-			<div class="l_header__logo">Техноком</div>
+			<div class="l_header__logo">
+				<img src="/wp-content/themes/tkom/images/logo.png" alt="Техноком"/>
+			</div>
 			<div class="l_header__right">
-				<a href="#">Поехали!</a>
-				<a href="#">Сообщества</a>
 				<a href="#">Помощь</a>
 			</div>
 		</div>

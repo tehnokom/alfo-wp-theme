@@ -21,11 +21,10 @@
 	/* Шапка
 	=========================================================== */
 	.l_header { position: fixed; top: 0; right: -20px; left: 0; height: 42px; padding-right: 20px; background: #007BAC /*url(../images/space.jpg) center 65% no-repeat*/; background-size: cover; overflow-x: hidden; overflow-y: scroll; z-index: 10; transition: 0.3s all; }
-		.l_header__logo { position: absolute; top: 0; left: 17px; bottom: 0; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 2px; line-height: 40px; transition: 0.2s all; }
-		a.l_header__logo:hover,
-		a.l_header__logo:active { color: #fff; background-color: transparent; }
-		a.l_header__logo:hover { text-shadow: 0 0 5px #fff; }
-		a.l_header__logo:active { text-shadow: 0 0 1px #fff; }
+		.l_header__logo { position: absolute; top: 0; left: 17px; bottom: 0; width: 125px; line-height: 48px; transition: 0.2s all; }
+		a.l_header__logo:hover { opacity: 0.8; }
+		a.l_header__logo:active { opacity: 0.6; }
+			.l_header__logo > img { display: inline-block; width: 125px; height: 18px; }
 		.l_header__search { position: absolute; top: 50%; left: 167px; height: 32px; margin-top: -16px; }
 			.l_header__search > input { width: 200px; }
 			.l_header__search > input:focus { width: 300px; }
