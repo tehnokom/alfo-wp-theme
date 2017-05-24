@@ -1,0 +1,110 @@
+
+/* 1. Сброс margin и padding
+=========================================================== */
+*,
+::before,
+::after { margin: 0; padding: 0; outline: none; box-sizing: border-box; -moz-box-sizing: border-box; }
+
+
+/* 2. Фон страницы и шрифт основного текста
+=========================================================== */
+html,
+body { overflow: hidden; }
+html { height: 100%; margin: 0 !important; margin-top: 0 !important; background-color: #fff; font: normal normal 13px 'roboto', Arial, sans-serif; color: #000; }
+	body { height: 100%; }
+	
+html.no_margin_top { margin-top: 0 !important; }
+
+p {
+	margin-bottom: 10px;
+}
+
+
+/* 3. Сброс тегов html5
+=========================================================== */
+section, header, footer, content, nav, aside, article { display: block; }
+mark { display: inline; }
+
+
+/* 4. Сброс стилей основных тегов
+=========================================================== */
+h1:first-child, h2:first-child { margin-top: 0; }
+
+a { color: #007BAC; text-decoration: none; }
+a:hover { color: #007BAC; }
+
+	a > img { border: 0; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+	table td { vertical-align: top; }
+
+ul { list-style-type: none; }
+
+select,
+option,
+input,
+button,
+textarea { font: normal normal 12px 'roboto', Arial, sans-serif; color: #000; }
+
+
+/* 5. Шрифты
+=========================================================== */
+@font-face {/* Roboto Light */
+	font-family: 'roboto';
+	src: url('../fonts/roboto-lightcyrillicscha-webfont.eot');
+	src: url('../fonts/roboto-lightcyrillicscha-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/roboto-lightcyrillicscha-webfont.woff2') format('woff2'),
+	url('../fonts/roboto-lightcyrillicscha-webfont.woff') format('woff'),
+	url('../fonts/roboto-lightcyrillicscha-webfont.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {/* Roboto Regular */
+	font-family: 'roboto';
+	src: url('../fonts/roboto-regular-webfont.eot');
+	src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+	url('../fonts/roboto-regular-webfont.woff') format('woff'),
+	url('../fonts/roboto-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {/* Roboto Medium */
+	font-family: 'roboto';
+	src: url('../fonts/roboto-medium-webfont.eot');
+	src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+	url('../fonts/roboto-medium-webfont.woff') format('woff'),
+	url('../fonts/roboto-medium-webfont.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {/* Roboto Bold */
+	font-family: 'roboto';
+	src: url('../fonts/roboto-bold-webfont.eot');
+	src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+	url('../fonts/roboto-bold-webfont.woff') format('woff'),
+	url('../fonts/roboto-bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {/* Rouble */
+	font-family: 'rouble';
+	src: url('../fonts/PTRoubleSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/PTRoubleSans.otf')  format('opentype'),
+	url('../fonts/PTRoubleSans.woff') format('woff'), url('../fonts/PTRoubleSans.ttf')  format('truetype'), url('../fonts/PTRoubleSans.svg#PTRoubleSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.rouble_sign { font-family: 'rouble', sans-serif; }
+
+img.avatar, #header-cover-image {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+}	
