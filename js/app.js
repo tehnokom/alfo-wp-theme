@@ -1,4 +1,4 @@
-$(function()
+/*$(function()
 {
 
 
@@ -24,4 +24,21 @@ $(function()
     }
 
 
-});
+});*/
+
+
+window.onload = function()
+{
+	
+	if(document.querySelectorAll('[data-role="mobile_sidebar"]').length > 0)
+	{
+		var	$menu = document.getElementById('mobile_sidebar'),
+			$trigger = document.getElementById('menu_trigger');
+		
+		$trigger.addEventListener('click', function()
+		{
+			$menu.classList.toggle('open');
+		});
+	}
+	
+}

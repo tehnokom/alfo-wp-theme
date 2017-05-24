@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no_margin_top">
 	<head>
 
 		<meta charset="<?php bloginfo('charset'); ?>"/>
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
-		<link href="/wp-content/themes/tkom/images/favicon.png" rel="icon" type="image/x-icon"/>
+		<link href="/wp-content/themes/index/images/favicon.png" rel="icon" type="image/x-icon"/>
 
 		<meta name="keywords" lang="ru" content=""/>
 		<meta name="description" lang="ru" content=""/>
@@ -15,18 +15,8 @@
 		
 		<?php wp_head(); ?>
 
-		<script src="/wp-content/themes/tkom/js/html5.js"></script><!-- Создание новых тегов в старых браузерах -->
-		<script src="/wp-content/themes/tkom/js/jquery.min.js"></script><!-- jQuery -->
 
-
-		<!-- start: UI-элементы -->
-			<script src="/wp-content/themes/tkom/js/components/chosen.jquery.js"></script><!-- Стилизованные комбобоксы -->
-			<script src="/wp-content/themes/tkom/js/components/balalayka.loader.js"></script><!-- Индикатор процесса -->
-			<script src="/wp-content/themes/tkom/js/components/balalayka.popup.js"></script><!-- Модальные окна -->
-		<!-- end: UI-элементы -->
-
-
-		<script src="/wp-content/themes/tkom/js/app.js"></script><!-- Приложение -->
+		<script src="/wp-content/themes/index/js/app.js"></script><!-- Приложение -->
 
 	</head>
 <body <?php body_class(); ?>>
@@ -52,10 +42,10 @@
 
 <!-- Мобильное меню
 =========================================================== -->
-<div class="m_sidebar" data-role="mobile_sidebar">
+<div class="m_sidebar" data-role="mobile_sidebar" id="mobile_sidebar">
 	<div data-role="auth">
 		<nav class="m_sidebar__menu">
-			<a href="#" class="m_sidebar__menu__item" data-role="for_phone">Помощь</a>
+			<?php dynamic_sidebar( 'menu-mobile' ); ?>
 		</nav>
 	</div>
 </div>
@@ -69,12 +59,16 @@
 	=========================================================== -->
 	<header class="l_header">
 		<div class="g_inner">
-			<a class="m_menu_trigger" data-role="menu_trigger"><span></span></a>
-			<div class="l_header__logo">
-				<img src="/wp-content/themes/tkom/images/logo.png" alt="Техноком"/>
+			<a class="m_menu_trigger" data-role="menu_trigger" id="menu_trigger"><span></span></a>
+			<a href="/" class="l_header__logo">
+				<img src="/wp-content/themes/index/images/logo.png" alt="Техноком"/>
+			</a>
+			<div class="l_header__search">
+				<?php dynamic_sidebar( 'menu-search' ); ?>
 			</div>
 			<div class="l_header__right">
-				<a href="#">Помощь</a>
+				<?php dynamic_sidebar( 'menu-top' ); ?>
+				<?php dynamic_sidebar( 'menu-lingvo' ); ?>
 			</div>
 		</div>
 	</header>
@@ -84,15 +78,7 @@
 	<div class="l_content">
 		<div class="g_inner">
 			<div class="l_content__main">
-
-				<h1 class="bal_title h1 white">Умная соцсеть, с помощью<br/>которой вы достигнете большего</h1>
-				<h2 class="bal_title h2 white">Общайтесь, учитесь, учите, организуйтесь для совместной работы или задач</h2>
-				<h2 class="bal_title h2 white like_list">
-					<a href="#">Выбирайте</a> из 2 304 сообществ<br/>
-					<a href="#">Присоединяйтесь</a> к 4 721 проекту<br/>
-					<a href="#">Общайтесь</a> с 53 412 единомышленниками
-				</h2>
-
+			<?php dynamic_sidebar( 'front-page' ); ?>
 			</div>
 		</div>
 	</div>
@@ -106,5 +92,4 @@
 </div>
 
 
-</body>
-</html>
+<?php get_footer(); ?>

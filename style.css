@@ -14,6 +14,7 @@
 @import 'css/components/balalayka.loader.css';/*Индикатор процесса*/
 @import 'css/components/balalayka.popup.css';/*Модальные окна*/
 @import 'css/components/balalayka.line.css';/*Горизонтальный разделитель (линия)*/
+@import 'css/components/balalayka.link.css';/*Ссылки*/
 @import 'css/components/balalayka.title.css';/*Заголовки*/
 @import 'css/components/balalayka.text.css';/*Абзацы текста*/
 @import 'css/components/balalayka.button.css';/*Кнопки*/
@@ -24,4 +25,4 @@
 /* 4. Стили отдельных страниц
 =========================================================== */
 @import 'css/pages/landing.css';
-@import 'css/pages/profile.css';
+@import 'css/pages/profile.css?v=2';

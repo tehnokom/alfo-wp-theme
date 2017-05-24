@@ -10,8 +10,14 @@
 =========================================================== */
 html,
 body { overflow: hidden; }
-html { height: 100%; margin: 0 !important; background-color: #fff; font: normal normal 12px 'roboto', Arial, sans-serif; color: #000; }
+html { height: 100%; margin: 0 !important; margin-top: 0 !important; background-color: #fff; font: normal normal 13px 'roboto', Arial, sans-serif; color: #000; }
 	body { height: 100%; }
+	
+html.no_margin_top { margin-top: 0 !important; }
+
+p {
+	margin-bottom: 10px;
+}
 
 
 /* 3. Сброс тегов html5
@@ -91,3 +97,14 @@ textarea { font: normal normal 12px 'roboto', Arial, sans-serif; color: #000; }
 	font-style: normal;
 }
 .rouble_sign { font-family: 'rouble', sans-serif; }
+
+img.avatar, #header-cover-image {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+}	
